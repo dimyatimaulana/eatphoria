@@ -175,6 +175,7 @@ button {
 }
 
 .h2 {
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   font-size: 2.25rem;
@@ -356,6 +357,4 @@ footer a {
     justify-content: flex-start;
     width: 90%;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
