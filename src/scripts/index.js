@@ -3,7 +3,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import addMain from './components/main/main';
 import addSearchBar from './components/search-bar/search-bar';
-// import footer from './components/footer/footer';
+import footer from './components/footer/footer';
 
 import data from '../DATA.json';
 
@@ -13,7 +13,7 @@ console.log(filteredRestaurants);
 
 document.addEventListener('DOMContentLoaded', addMain(filteredRestaurants));
 document.addEventListener('DOMContentLoaded', addSearchBar(restaurants, filteredRestaurants));
-// document.addEventListener('DOMContentLoaded', footer);
+document.addEventListener('DOMContentLoaded', footer);
 
 const bun = document.querySelector('.header__hamburger');
 const navMenu = document.querySelector('.header__nav');
