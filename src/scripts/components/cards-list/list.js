@@ -11,6 +11,7 @@ const addList = (restaurants) => {
 
     const cardItem = document.createElement('div');
     cardItem.classList.add('card-item');
+    cardItem.tabIndex = '0';
 
     cardItem.innerHTML = `
       <img class='card-item__image' src='${pictureId}' alt='restaurant'>

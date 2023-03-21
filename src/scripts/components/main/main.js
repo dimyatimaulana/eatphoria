@@ -13,7 +13,7 @@ const addMain = (restaurants) => {
     <div class="search-bar"></div>
     <div id="list">
       <h2 class="h2">Explore Restaurant</h2>
-      <div tabindex="0" class="list-container"></div>
+      <div class="list-container"></div>
     </div>
     <div id="about">
       <h2 class="h2">About</h2>
