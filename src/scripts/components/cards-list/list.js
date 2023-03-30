@@ -6,7 +6,7 @@ const addList = (restaurants) => {
 
   restaurants.forEach((restaurant) => {
     const {
-      name, pictureId, city, rating,
+      id, name, pictureId, city, rating,
     } = restaurant;
 
     const cardItem = document.createElement('div');
@@ -16,7 +16,9 @@ const addList = (restaurants) => {
     cardItem.innerHTML = `
       <img class='card-item__image' src='${pictureId}' alt='restaurant'>
       <div class='card-item__info'>
-          <h2>${name}</h2>
+          <a href="/#/detail/${id}">
+            <h2>${name}</h2>
+          </a>
           <h3>${city}</h3>
           <h4>Rating: ${rating}</h4>
       </div>

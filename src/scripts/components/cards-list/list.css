@@ -33,6 +33,7 @@
 }
 
 .card-item__info h2 {
+  color: #424242;
   text-align: center;
   padding: 0.5em;
   border-bottom: 1px solid #E0E0E0;
