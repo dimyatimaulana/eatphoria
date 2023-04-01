@@ -43,7 +43,6 @@ class RestaurantSource {
 
     const response = await fetch(ENDPOINT.REVIEW, options);
     const responseJson = await response.json();
-    // console.log(responseJson);
     return responseJson.customerReviews;
   }
 

@@ -16,33 +16,34 @@ const createRestaurantDetailTemplate = (restaurant) => `
         </div>
     </div>
     <div class="restaurant__detail">
-        <div class="restaurant__description">
-            <h3>Description</h3>
-            <p>${restaurant.description}</p>
+      <div class="restaurant__description">
+        <h3>Description</h3>
+          <p>${restaurant.description}</p>
+      </div>
+      <div class="restaurant__menus">
+        <div>
+          <h3>Foods</h3>
+          <ul class="foods">${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`)}</ul>
         </div>
-        <div class="restaurant__menus">
-            <h3>Foods</h3>
-            <ul class="foods">${restaurant.menus.foods.map((food) => `<p>${food.name}</>`)}</ul>
-            <h3>Drinks</h3>
-            <ul class="drinks">${restaurant.menus.drinks.map((drink) => `<p>${drink.name}</>`)}</ul>
+        <div>
+          <h3>Drinks</h3>
+          <ul class="drinks">${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`)}</ul>
         </div>
-        <div class="restaurant__reviews">
-            <h3 style="padding-bottom: 1em">Customer Reviews</h3>
-            ${restaurant.customerReviews.map((reviewer) => `<div id="prevReviewContainer">
-                    <p>${reviewer.name}</p>
-                    <p>${reviewer.review}</p>
-                </div>`)}<br>
-                <div id="newReviewContainer"></div>
-
-                <h3 style="padding-bottom: 1em; padding-top: 1em">Add Review</h3>
-                <form id="formReview">
-                    <p>Name:</p><br>
-                    <input type="text" id="reviewerName"><br>
-                    <p>Review:</p><br>
-                    <input type="text" id="customerReview"><br><br>
-                    <button type="submit" id="submitButton">Submit</button>
-                </form>
-        </div>
+      </div>
+      <div class="restaurant__reviews">
+        <h3 style="padding-bottom: 1em">Customer Reviews</h3>
+        ${restaurant.customerReviews.map((reviewer) => `<div id="prevReviewContainer">
+          <p>${reviewer.name}</p>
+            <p>${reviewer.review}</p>
+        </div>`)}<br>
+        <div id="newReviewContainer"></div>
+        <h3 style="padding-bottom: 1em; padding-top: 1em">Add Review</h3>
+        <form id="formReview">
+          <input type="text" id="reviewerName" placeholder="Name"><br><br>
+          <input type="text" id="customerReview" placeholder="Write your feelings"><br><br>
+          <button type="submit" id="submitButton">Submit</button>
+        </form>
+      </div>
     </div>
 
 `;

@@ -1,13 +1,9 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
 import App from './views/app';
-// import addMain from './components/main/main';
-// import addSearchBar from './components/search-bar/search-bar';
 import footer from './components/footer/footer';
 
 import swRegister from './utils/sw-register';
-
-// import data from '../DATA.json';
 
 const app = new App({
   button: document.querySelector('.header__hamburger'),

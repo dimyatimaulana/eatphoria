@@ -3,8 +3,8 @@ import { createLikeRestaurantButtonTemplate, createUnlikeRestaurantButtonTemplat
 const LikeButtonPresenter = {
   async init({ likeButtonContainer, favoriteRestaurants, restaurant }) {
     this._likeButtonContainer = likeButtonContainer;
-    this._restaurant = restaurant;
     this._favoriteRestaurants = favoriteRestaurants;
+    this._restaurant = restaurant;
 
     await this._renderButton();
   },

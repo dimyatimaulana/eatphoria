@@ -1,0 +1,163 @@
+/* DETAIL RESTO */
+$primary-color: #0D2356;
+$secondary-color: #224187;
+$text-color: rgb(245, 239, 239);
+
+#detail-restaurant {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .restaurant__name {
+    width: 80vw;
+    padding: 1.5em;
+    font-size: 30px;
+    border-top: 1px solid#424242;
+  }
+  
+  .restaurant__image {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .restaurant__info {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
+  .restaurant__info h4, p {
+    padding: 0.5em;
+  }
+
+  .restaurant__detail {
+    margin-top: 3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem 5rem;
+  }
+  
+  .restaurant__description {
+    padding-top: 1em;
+    font-size: 20px;
+  }
+  
+  .restaurant__menus h3 {
+    padding-top: 1em;
+  }
+  
+  .restaurant__menus {
+    font-size: 18px;
+    display: flex;
+    padding: 2rem 0;
+    gap: 3rem;
+  }
+  
+  .restaurant__menus .foods {
+    padding: 0.5em;
+  }
+  
+  .restaurant__menus .drinks {
+    padding: 0.5em;
+  }
+  
+  .restaurant__reviews {
+    background: linear-gradient(to right, $secondary-color, $primary-color);
+    color: $text-color;
+    padding: 2rem;
+    padding-top: 1em;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #prevReviewContainer {
+    border-bottom: white 2px solid;
+  }
+  #newReviewContainer {
+    border-bottom: white 2px solid;
+  }
+  
+  #formReview input{
+    border: 0;
+    border-radius: 10px;
+    min-width: 40vw;
+    min-height: 44px;
+  }
+
+  #submitButton {
+    border: 0;
+    min-width: 100px;
+    min-height: 44px;
+    background-color: $text-color;
+    color: #224187;
+    font-weight: 600;
+  }
+
+  #submitButton:hover {
+    transition: .3s;
+    transform: scale(1.1);
+  }
+  
+  /* LIKE */
+  
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*=============== BREAKPOINTS ===============*/
+/* For large devices */
+
+@media screen and (max-width: 1400px) {
+  
+}
+
+@media screen and (max-width: 992px) {
+  .restaurant__info {
+    flex-direction: column;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .restaurant__info h4, p {
+    padding: 0.2rem;
+  }
+
+  .restaurant__detail {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+}
+
+/* For small devices */
+
+@media screen and (max-width: 450px) {
+  
+}
+
+@media screen and (max-width: 360px) {
+  
+}

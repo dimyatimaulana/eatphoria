@@ -1,0 +1,14 @@
+.favorite {
+  margin: auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.list-container {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}/*# sourceMappingURL=favorite.css.map */
