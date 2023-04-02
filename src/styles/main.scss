@@ -365,6 +365,10 @@ footer a {
         background-position: right;
         height: 300px;
     }
+
+    .h2 {
+        font-size: 2rem;
+    }
 }
   
 /* For small devices */
@@ -413,6 +417,21 @@ footer a {
         padding-top: 2rem;
         justify-content: flex-start;
         width: 90%;
+    }
+
+    .h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 290px){
+    .header__group {
+        flex-direction: column;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
     }
 }
   
