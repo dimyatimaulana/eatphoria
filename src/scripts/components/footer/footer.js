@@ -7,7 +7,7 @@ const footer = () => {
       <h2>Useful Links</h2>
       <ul>
           <li><a href='/'>Home</a></li>
-          <li><a href='#'>Favorite</a></li>
+          <li><a href='#/favorite'>Favorite</a></li>
           <li><a href='https://maulana-dimyati.vercel.app/'>About</a></li>
       </ul>
   </div> 
