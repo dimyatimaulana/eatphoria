@@ -1,6 +1,5 @@
 import RestaurantSource from '../../data/restaurants-source';
-// eslint-disable-next-line no-unused-vars
-import { createRestaurantItemTemplate, createSkeletonRestaurantTemplate } from '../templates/template-creator';
+import { createSkeletonRestaurantTemplate } from '../templates/template-creator';
 import addList from '../../components/cards-list/list';
 import about from '../../components/about/about';
 
@@ -29,7 +28,7 @@ const Home = {
 
   async afterRender() {
     const restaurants = await RestaurantSource.homeList();
-    console.log(restaurants);
+
     document.addEventListener('DOMContentLoaded', addList(restaurants));
 
     document.addEventListener('DOMContentLoaded', about);
