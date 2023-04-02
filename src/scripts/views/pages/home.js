@@ -31,7 +31,7 @@ const Home = {
 
     document.addEventListener('DOMContentLoaded', addList(restaurants));
 
-    document.addEventListener('DOMContentLoaded', about);
+    document.addEventListener('DOMContentLoaded', about());
   },
 };
 
