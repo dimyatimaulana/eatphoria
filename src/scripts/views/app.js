@@ -27,7 +27,7 @@ class App {
     const skipLink = document.querySelector('.skip-link');
     skipLink.addEventListener('click', (e) => {
       e.preventDefault();
-      document.querySelector('.main').focus();
+      document.querySelector('#mainContent').focus();
     });
   }
 }
