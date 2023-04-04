@@ -10,7 +10,8 @@
     "build-serve": "npm run build && npm run serve",
     "build-image": "node sharp.js",
     "build-image-build-serve": "node sharp.js && npm run build && npm run serve",
-    "test": "karma start"
+    "test": "karma start",
+    "e2e": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "Maulana Dimyati <https://maulana-dimyati.vercel.app/>",
