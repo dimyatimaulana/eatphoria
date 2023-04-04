@@ -16,7 +16,7 @@ const addList = (restaurants) => {
     cardItem.tabIndex = '0';
 
     cardItem.innerHTML = `
-      <img class='card-item__image' src='${CONFIG.BASE_IMAGE_URL_MEDIUM + pictureId}' alt='restaurant'>
+      <img class='card-item__image' src='${CONFIG.BASE_IMAGE_URL_MEDIUM + pictureId}' alt='restaurant' loading='lazy'>
       <div class='card-item__info'>
           <a href="/#/detail/${id}">
             <h2>${name}</h2>
