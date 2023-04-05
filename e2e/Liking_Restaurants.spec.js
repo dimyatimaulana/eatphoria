@@ -12,7 +12,7 @@ Scenario('showing empty liked restaurants', ({ I }) => {
   I.see('Daftar masih kosong');
 });
 
-Scenario('liking one movie', async ({ I }) => {
+Scenario('liking one restaurants', async ({ I }) => {
   I.see('Daftar masih kosong');
 
   I.amOnPage('/');
