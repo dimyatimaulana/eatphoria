@@ -45,6 +45,7 @@ body, html {
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
     color: #424242;
@@ -83,6 +84,7 @@ a, ul {
     justify-content: space-around;
     background: linear-gradient(to right, $secondary-color, $primary-color);
     color: $text-color;
+    width: 100%;
 }
 
 .header__group {
@@ -242,6 +244,7 @@ footer {
     background: linear-gradient(to right, $secondary-color, $primary-color);
     padding: 2em;
     width: 100%;
+    min-height: 360px;
     text-align: center;
     margin-top: $m-2;
 }

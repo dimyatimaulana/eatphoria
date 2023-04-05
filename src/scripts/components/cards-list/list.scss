@@ -23,8 +23,9 @@
 }
 
 .card-item__image {
+    height: 240px;
     max-height: 250px;
-    width: 100%;
+    width: 400px;
 }
    
 .card-item__info {
@@ -56,7 +57,9 @@
   
 /* For medium devices */
 @media screen and (max-width: 768px) {
-
+    .card-item__image {
+        width: 100%;
+    }
 }
   
 @media screen and (max-width: 576px) {
