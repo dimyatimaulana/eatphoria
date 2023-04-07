@@ -23,11 +23,11 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <div class="restaurant__menus">
         <div>
           <h3>Foods</h3>
-          <ul class="foods">${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`)}</ul>
+          <ul class="foods">${restaurant.menus.foods.map((food) => `<li>${food.name}</li>`).join('')}</ul>
         </div>
         <div>
           <h3>Drinks</h3>
-          <ul class="drinks">${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`)}</ul>
+          <ul class="drinks">${restaurant.menus.drinks.map((drink) => `<li>${drink.name}</li>`).join('')}</ul>
         </div>
       </div>
       <div class="restaurant__reviews">
